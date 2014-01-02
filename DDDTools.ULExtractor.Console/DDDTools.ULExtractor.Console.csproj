@@ -41,11 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DDDTools.ULExtractor\DDDTools.ULExtractor.csproj">
+      <Project>{2950fd9d-f361-4fa6-96cf-64237240a31c}</Project>
+      <Name>DDDTools.ULExtractor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

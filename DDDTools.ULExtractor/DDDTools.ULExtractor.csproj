@@ -39,6 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssemblyHelper.cs" />
+    <Compile Include="Concept.cs" />
+    <Compile Include="ConceptAction.cs" />
+    <Compile Include="HtmlFormatter.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="ModuleLanguage.cs" />
+    <Compile Include="BoundedContextLanguage.cs" />
+    <Compile Include="TerminologyItem.cs" />
+    <Compile Include="UbiquitousLanguage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
