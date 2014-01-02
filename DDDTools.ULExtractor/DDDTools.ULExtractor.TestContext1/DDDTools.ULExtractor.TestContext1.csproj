@@ -39,8 +39,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DocumentsModule\Commands\CreateCategoryCommand.cs" />
+    <Compile Include="DocumentsModule\Commands\CreateDocumentCommand.cs" />
+    <Compile Include="DocumentsModule\Commands\RenameCategoryCommand.cs" />
+    <Compile Include="DocumentsModule\DomainEvents\CategoryCreatedEvent.cs" />
+    <Compile Include="DocumentsModule\DomainEvents\CategoryRenamedEvent.cs" />
+    <Compile Include="DocumentsModule\DomainEvents\DocumentCreatedEvent.cs" />
+    <Compile Include="DocumentsModule\Models\Author.cs" />
+    <Compile Include="DocumentsModule\Models\Category.cs" />
+    <Compile Include="DocumentsModule\Models\Document.cs" />
+    <Compile Include="DocumentsModule\Models\DocumentFormat.cs" />
+    <Compile Include="DocumentsModule\Queries\AllCategoriesQuery.cs" />
+    <Compile Include="DocumentsModule\Queries\DocumentsByAuthorQuery.cs" />
+    <Compile Include="DraftModule\Commands\CreateDraftCommand.cs" />
+    <Compile Include="DraftModule\Commands\PublishDocumentCommand.cs" />
+    <Compile Include="DraftModule\Commands\ReviewDraftCommand.cs" />
+    <Compile Include="DraftModule\DomainEvents\DocumentPublishedEvent.cs" />
+    <Compile Include="DraftModule\DomainEvents\DraftApprovedEvent.cs" />
+    <Compile Include="DraftModule\DomainEvents\DraftCreatedEvent.cs" />
+    <Compile Include="DraftModule\DomainEvents\DraftRejectedEvent.cs" />
+    <Compile Include="DraftModule\Models\Comment.cs" />
+    <Compile Include="DraftModule\Models\Draft.cs" />
+    <Compile Include="DraftModule\Models\Reviewer.cs" />
+    <Compile Include="DraftModule\Queries\DraftReviewHistoryQuery.cs" />
+    <Compile Include="DraftModule\Queries\DraftsForReviewQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
